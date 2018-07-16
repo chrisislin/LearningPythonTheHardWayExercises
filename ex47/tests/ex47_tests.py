@@ -5,7 +5,7 @@ def test_room():
 	gold = Room ("GoldRoom", 
 		         """This room has gold in it""")
 	assert_equal(gold.name, "GoldRoom")
-	assert_equal(gold.paths, [])
+	assert_equal(gold.paths, {})
 
 def test_room_paths():
 	center = Room("Center", "Test room in the center.")
